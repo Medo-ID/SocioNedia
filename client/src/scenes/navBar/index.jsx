@@ -39,7 +39,7 @@ const Navbar = () => {
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  const fullName = `${user?.firstName} ${user?.lastName}`
+  const fullName = `${user?.firstName} ${user?.lastName}`;
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
@@ -73,7 +73,7 @@ const Navbar = () => {
         )}
       </FlexBetween>
 
-      {/* DESKTOP NAVBAR */}
+      {/* DESKTOP NAV */}
       {isNonMobileScreens ? (
         <FlexBetween gap="2rem">
           <IconButton onClick={() => dispatch(setMode())}>
@@ -119,7 +119,7 @@ const Navbar = () => {
         </IconButton>
       )}
 
-      {/* MOBILE NAVBAR */}
+      {/* MOBILE NAV */}
       {!isNonMobileScreens && isMobileMenuToggled && (
         <Box
           position="fixed"
@@ -191,7 +191,7 @@ const Navbar = () => {
         </Box>
       )}
     </FlexBetween>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
